@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <h1>Tip Calculator</h1>
+    </header>
+
+    <form>
+      <div class="form-group container-fluid">
+
+        <label for="total">Check Total:</label>
+        <input placeholder="Current check total" type="number" class="form-control" id="checkTtl" name="checkTotal" value=""><br>
+
+        <label for="percentage">Tip Percentage (%):</label><br>
+        <input placeholder="Desired tip percentage" type="number" class="form-control" id="tipPercent" name="tipPercentage" value=""><br>
+
+        <label for="toDivide">Number of People:</label><br>
+        <input placeholder="Number of people to divide it by" type="number" class="form-control" id="numberPpl" name="numberPeople" value=""><br>
+
+        <input type="submit" id="submit" class="btn btn-primary" value="Calculate">
+
+        <input type="submit" id="clear" class="btn btn-secondary" value="Clear">
+
+      </div>
+    </form>
+
+    <div class="calculationTotals container-fluid">
+      <div >Tip amount:</div>
+      <ul id="tipAmount">
+      </ul>
+
+      <div >Total amount to pay:</div>
+      <ul id="totalAmount">
+      </ul>
+
+      <div >Total amount for each person:</div>
+      <ul id="dividedAmount">
+      </ul>
+
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
